@@ -1,0 +1,22 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "github-actions" # Maintain dependencies for GitHub Actions
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm" # Maintain dependencies for npm
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  
+  - package-ecosystem: "composer" # Maintain dependencies for Composer
+    directory: "/"
+    schedule:
+      interval: "weekly"
